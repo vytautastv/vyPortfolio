@@ -1,54 +1,124 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vytautas' Portfolio</title>
+        <link rel="stylesheet" href="./Assets/css/style.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
+    <body>
+        <!-- header and nav section start -->
+        <header>
+            <div><h1>Vytautas</h1></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#my-work">My Work</a>
+                    </li>
+                    <li>
+                        <a href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-   <!-- header and nav section start -->
-    <header>
-      <div class="container">
-          <h1>Vytautas' portfolio</h1>
-          <nav>
-              <ul>
-                  <li><a href="#about">About Me</a></li>
-                  <li><a href="#work">My Work</a></li>
-                  <li><a href="#contact">Contact Me</a></li>
-              </ul>
-          </nav>
-      </div>
-  </header>
+        <!-- hero image section start -->
+        <section class="hero">
+            <div>
+                <img src="./Assets/images/02-hero-bg.jpg" alt="An image of Vy">
+            </div>
+            <div class="quote">
+                <blockquote>
+                    <p id="quote-text">
+                        Life is trying to things <br> to see if they work.
+                    </p>
+                    <p>
+                        --Ray Bradbury
+                    </p>
+                </blockquote>
+            </div>
+        </section>
 
-  <!-- hero banner -->
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1>My name is Vy</h1>
-      <p>And I'm a web developer</p>
-      <button>Contact Me</button>
-    </div>
-  </div>
+        <!-- about me section start -->
+        <section id="about-me" class="about-me">
+            <div class="title">
+                <h2>About Me</h2>
+            </div>
+            
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend enim at eros finibus luctus. Integer dapibus ex consequat risus pulvinar cursus. Vivamus sit amet mauris congue, tincidunt massa lacinia, varius purus. Curabitur tincidunt fringilla hendrerit. Morbi eleifend purus sed nunc laoreet sollicitudin. Aenean convallis hendrerit condimentum. Maecenas semper, sem quis iaculis gravida, leo turpis ullamcorper lectus, quis placerat quam neque in arcu. Ut interdum odio sed eros ornare ultricies. Sed imperdiet non mi ac eleifend. In pretium, risus quis feugiat commodo, lacus ex pulvinar libero, non rutrum nibh tortor et magna.
+                    <br><br>
+                    Donec blandit aliquet rutrum. Donec et pharetra nulla. Nullam ultrices nisi vitae luctus volutpat. Nunc vitae magna ultricies, vulputate erat vitae, lacinia ipsum. Ut eu nisl at magna vulputate sagittis. Etiam eros orci, dictum sed risus in, iaculis eleifend diam. Ut dapibus nulla sit amet mauris tristique viverra. Mauris varius sed ligula a accumsan. Praesent feugiat euismod velit, eu vestibulum libero scelerisque sed. Aliquam finibus turpis arcu, nec convallis dui semper id. Ut nisl lacus, molestie ac ornare sit amet, suscipit mollis sapien.
+                </p>
+            </div>
+        </section>
 
-  <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2> 
-    </section>
+        <!-- my work section start -->
+        <section id="my-work" class="my-work">
+            <div class="title"><h2>My Work</h2></div>
+            <div class = "projects-grid-wrapper">
+                <div class="projects-grid">
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+                    <a href="" target="_blank" class="project run-buddy">
+                        <div class="project-label">
+                            <h3>Project 1</h3>
+                            <p>HTML/CSS</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank" class="project robot-gladiators">
+                        <div class="project-label">
+                            <h3>Project 2</h3>
+                            <p>JavaScript</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank" class="project prestige-worldwide">
+                        <div class="project-label">
+                            <h3>Project 3</h3>
+                            <p>HTML/CSS/JavaScript</p>
+                        </div>
+                    </a>
+                    <a href="" target="_blank" class="project fo4-char-mgr">
+                        <div class="project-label">
+                            <h3>Project 4</h3>
+                            <p>Node.js, React</p>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank"  class="project project5">
+                        <div class="project-label">
+                            <h3>Project 5</h3>
+                            <p>Placeholder</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
-  </main>
-</body>
-
+        <!-- contact info section -->
+        <footer id="contact-me">
+            <div class="title"><h2>Contact Me</h2></div>
+            <div class="content-wrapper">
+                <div id="contact-list">
+                    <ul>
+                        <li>
+                            <a href="mailto:vytautastv98@gmail.com">Email</a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/vytautas-tvarijonas-31309717b/" target="_blank">LinkedIn</a>
+                        </li>
+                        <li>
+                            <p>(555) 555-5555</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
