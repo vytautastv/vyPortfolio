@@ -1,86 +1,351 @@
+/* Color variables */
+:root {
+  --primary: #14213d;
+  --secondary: #ffc300;
+  --hover: #ffd60a;
+}
+
+/* CSS reset */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* Global styling selectors*/
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--primary);
+  background-color: var(--secondary);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  color: #ffc300;
-}
-
-p {
-  margin: 0;
-}
-
-/* Header/navigation bar starts */
-
-.container {
+/* Header/navigation selectors start */
+header {
+  background-color: var(--primary);
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #001d3d;
-  color: #fff;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
-h1 {
-  margin: 0;
+header div {
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+header h1 {
+  color: var(--primary);
+  font-size: 40px;
+  font-weight: bold;
+  background-color: var(--secondary);
+  padding: 10px;
+  border: 5px solid var(--hover);
 }
 
-nav li {
-  display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-nav a {
+header a {
   text-decoration: none;
-  color: #fff;
+  color: var(--secondary);
 }
 
-nav a:hover {
-  border-bottom: 2px solid #fff;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
 }
 
-/* Navigation/header bar ends*/
-
-/* Hero image section starts*/
-
-body, html {
-  height: 100%;
+header nav {
+  margin: 20px;
 }
 
-.hero-image {
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/02-hero-bg.jpg");
-height: 50%;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
+header nav ul li a {
+  padding: 8px;
+  font-size: 28px;
+  margin: 20px 20px 0 0;
+  font-weight: bold;
 }
 
-.hero-text {
-text-align: center;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: white;
+header nav ul li a:hover {
+  background: var(--hover);
+  color: var(--primary);
+  border-radius: 15px;
 }
+
+/* Header/navigation styling end */
+
+
+/* hero styling start */
+.hero {
+  background-image: url("../images/02-hero-bg.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.hero img {
+  height: 200px;
+}
+
+.hero .quote {
+  font-size: 35px;
+  display: flex;
+  justify-content: end;
+  text-align: right;
+  color: var(--hover);
+  
+}
+
+.hero .quote #quote-text {
+  font-size: 48px;
+}
+/* hero styling end */
+
+/* utility class styling start */
+.title {
+  border-right: 5px solid var(--pop);
+  min-height: 100%;
+  text-align: right;
+  padding-right: 40px;
+  min-width: 20%;
+  max-width: 20%;
+}
+
+.title h2 {
+  font-size: 48px;
+}
+
+/* utility class styling end */
+
+/* about me section styling start */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 30px;
+}
+
+.about-me p {
+  font-size: 20px;
+  padding: 0 25px 0 25px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  width: 90%;
+}
+/* about me section styling end */
+
+/* my work section styling start */
+.my-work {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+}
+
+.my-work h2 {
+  color: var(--secondary);
+}
+
+.projects-grid-wrapper {
+  width: 80%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-grid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.project {
+  border: solid;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.project:hover {
+  opacity: 1.0;
+}
+
+.run-buddy {
+  grid-column: 1/3;
+  grid-row: span 2;
+  background-image: url("");
+}
+
+.robot-gladiators {
+  background-image: url("");
+  background-position: 50% 15%;
+}
+
+.prestige-worldwide {
+  background-image: url("");
+  background-position: 60% 50%;
+}
+
+.fo4-char-mgr {
+  background-image: url("");
+}
+
+.project5 {
+  background-image: url("");
+}
+
+.project-label {
+  background-color: lightgray;;
+  color: var(--primary);
+  padding: 10px;
+}
+/* Work section selectors end*/
+
+/* Contact section selectors start */
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.content-wrapper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-list {
+  width: 60%;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+footer ul li {
+  /*padding-bottom: 15px;*/
+  font-weight: bold;
+
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--primary);
+  padding: 8px;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  background: var(--primary);
+  color: var(--hover);
+  border-radius: 15px;
+}
+/* contact me section styling end */
+
+/* MEDIA QUERY FOR TABLET SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .hero .quote {
+      font-size: 28px;
+      padding-right: 20px;
+  }
+  
+  .hero .quote #quote-text {
+      font-size: 35px;
+  }
+
+  .title h2 {
+      font-size: 35px;
+  }
+
+  .about-me p {
+      font-size: 16px;
+      /*padding: 0 15px;*/
+      line-height: 1.6;
+  }
+}
+
+/* Medie queries for smaller devices/phones */
+@media screen and (max-width: 575px) {
+  header {
+      justify-content: center;
+      padding: 20px;
+  }
+
+  header nav ul {
+      min-height: 80px;
+  }
+
+  .hero {
+      flex-direction: column;
+  }
+
+  .about-me {
+      flex-direction: column;
+  }
+
+  .title {
+      border-bottom: 5px solid var(--pop);
+      border-right: none;
+      text-align: center;
+      min-width: 100%;
+      max-width: 100%;
+      padding: 0;
+  }
+
+  .about-me p {
+      font-size: 16px;
+      line-height: 1.6;
+      width: 100%;
+      padding: 15px;
+  }
+
+  .my-work {
+      flex-direction: column;
+      padding: 30px 0;
+  }
+
+  .projects-grid-wrapper {
+      width: 100%;
+      padding: 10px;
+  }
+  
+  .projects-grid {
+      width: 80%;
+  }
+
+  footer {
+      flex-direction: column;
+  }
+
+  footer ul {
+      flex-direction: column;
+  }
+
+  .content-wrapper {
+      width: 100%;
+  }
+
+  footer ul li {
+      padding: 10px;
+      text-align: center;
+  }
+  
+}
+
