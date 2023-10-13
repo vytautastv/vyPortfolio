@@ -259,7 +259,7 @@ footer ul li a:hover {
 }
 /* contact me section styling end */
 
-/* MEDIA QUERY FOR TABLET SCREENS AND SMALLER */
+/* Media query for small screens */
 @media screen and (max-width: 768px) {
   .hero .quote {
       font-size: 28px;
