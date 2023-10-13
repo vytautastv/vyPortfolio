@@ -62,6 +62,7 @@ header nav ul li a {
   font-size: 28px;
   margin: 20px 20px 0 0;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 header nav ul li a:hover {
@@ -75,8 +76,8 @@ header nav ul li a:hover {
 
 /* hero styling start */
 .hero {
-  background-image: url("../images/02-hero-bg.jpg");
-  height: 400px;
+  background-image: url(../images/02-hero-bg.jpg);
+  height: 200px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -84,8 +85,13 @@ header nav ul li a:hover {
   justify-content: space-around;
 }
 
+.hero background-image {
+  opacity: 50%;
+}
+
 .hero img {
-  height: 200px;
+  height: 150px;
+  border-radius: 25%  ;
 }
 
 .hero .quote {
@@ -99,10 +105,11 @@ header nav ul li a:hover {
 
 .hero .quote #quote-text {
   font-size: 48px;
+  background: #14213d;
 }
 /* hero styling end */
 
-/* utility class styling start */
+/* Title class styling starts */
 .title {
   border-right: 5px solid var(--pop);
   min-height: 100%;
@@ -116,9 +123,9 @@ header nav ul li a:hover {
   font-size: 48px;
 }
 
-/* utility class styling end */
+/* Title class styling end */
 
-/* about me section styling start */
+/* About me section styling start */
 .about-me {
   display: flex;
   justify-content: space-between;
@@ -133,9 +140,9 @@ header nav ul li a:hover {
   line-height: 1.6;
   width: 90%;
 }
-/* about me section styling end */
+/* About me section styling end */
 
-/* my work section styling start */
+/* My work section styling start */
 .my-work {
   padding: 30px 0;
   display: flex;
@@ -250,6 +257,7 @@ footer ul li a {
   color: var(--primary);
   padding: 8px;
   font-weight: bold;
+  text-decoration: underline;
 }
 
 footer ul li a:hover {
@@ -268,6 +276,7 @@ footer ul li a:hover {
   
   .hero .quote #quote-text {
       font-size: 35px;
+      font-weight: 200px;
   }
 
   .title h2 {
